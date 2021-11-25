@@ -5,10 +5,12 @@ import { Provider } from 'react-redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import useReducer from "./features/user";
+import themeReducer from "./features/user";
 
  const store = configureStore({
   reducer:{
     user:useReducer,
+    theme:themeReducer,
   },
 })
 ReactDOM.render(
