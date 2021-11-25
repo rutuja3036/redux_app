@@ -11,6 +11,7 @@ name: "theme",
   },
 });
 
+
 export const { changeColor } = themeSlice.actions;
 
 export default themeSlice.reducer;

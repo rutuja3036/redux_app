@@ -7,7 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import useReducer from "./features/user";
 import themeReducer from "./features/user";
 
- const store = configureStore({
+ 
+const store = configureStore({
   reducer:{
     user:useReducer,
     theme:themeReducer,

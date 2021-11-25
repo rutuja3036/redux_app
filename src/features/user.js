@@ -17,4 +17,5 @@ reducers:{
 },
     });
     export const{login} = userSlice.actions;
-export default useSlice.reducer;
+
+    export default useSlice.reducer;
