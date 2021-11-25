@@ -1,12 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
-import React from 'react';
+import React, { useReducer } from 'react';
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import useReducer from "./features/user";
 
  const store = configureStore({
-  reducer:{},
+  reducer:{
+    user:useReducer,
+  },
 })
 ReactDOM.render(
   <React.StrictMode>
